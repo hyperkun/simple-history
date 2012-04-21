@@ -6,7 +6,8 @@
  */
 (function(window, undefined) {
 
-  var initial = location.href;
+  var initial = navigator.userAgent.indexOf(" AppleWebKit/") === -1 ?
+    null : location.href;
 
   window.SimpleHistory = {
     supported: !!(window.history && window.history.pushState),
