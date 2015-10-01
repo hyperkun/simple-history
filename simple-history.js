@@ -6,7 +6,7 @@
  */
 (function(window, undefined) {
 
-  var initial = navigator.userAgent.indexOf(" AppleWebKit/") === -1 ?
+  var initial = window.navigator.userAgent.indexOf(" AppleWebKit/") === -1 ?
     null : location.href;
 
   window.SimpleHistory = {
